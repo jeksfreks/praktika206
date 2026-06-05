@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда строительной спецтехники | СтроительПро</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="page">
+
+    <header class="header page__header">
+        <div class="header__container">
+            <span class="header__logo">СпецТехАренда</span>
+            <nav class="header__nav">
+                <a href="#" class="header__nav-item header__nav-item--active">Главная</a>
+                <a href="#" class="header__nav-item">Каталог</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content page__main">
+        <section class="hero main-content__hero">
+            <h1 class="hero__title">Аренда спецтехники без посредников</h1>
+            <p class="hero__subtitle">Скидки при аренде от 5 смен!</p>
+        </section>
+
+        <section class="catalog main-content__catalog">
+            <h2 class="catalog__title">Наш автопарк</h2>
+            
+          
+            <aside class="catalog__filter filter">
+                <h3 class="filter__title">Фильтр техники</h3>
+                <div class="filter__group">
+                    <label class="filter__label" for="filter-type">Тип техники:</label>
+                    <select id="filter-type" class="filter__select">
+                        <option value="all">Все категории</option>
+                        <option value="excavator">Экскаваторы</option>
+                        <option value="crane">Краны</option>                   
+                    </select>
+                </div>
+                <div class="filter__group">
+                    <label class="filter__label" for="filter-tonnage">Мин. грузоподъемность (тонн):</label>
+                    <input type="number" id="filter-tonnage" class="filter__input" min="0" placeholder="Например: 5">
+                </div>
+            </aside>
+
+         
+            <div class="catalog__list" id="catalog-list">
+               
+            </div>
+        </section>
+    </main>
+
+   
+    <dialog class="modal page__modal" id="order-modal">
+        <div class="modal__wrapper">
+            <button class="modal__close-btn" id="close-modal-btn">&times;</button>
+            <h3 class="modal__title">Оформить аренду</h3>
+            
+            <form class="form modal__form" id="order-form" novalidate>
+                <div class="form__group">
+                    <label class="form__label" for="form-name">Ваше имя:</label>
+                    <input type="text" id="form-name" class="form__input" required>
+                    <span class="form__error" id="error-name"></span>
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="form-phone">Телефон:</label>
+                    <input type="text" id="form-phone" class="form__input" placeholder="+7 (___) ___-__-__" required>
+                    <span class="form__error" id="error-phone"></span>
+                </div>
+
+                <button type="submit" class="form__submit-btn">Отправить заявку</button>
+            </form>
+        </div>
+    </dialog>
+
+    <footer class="footer page__footer">
+        <p>&copy; 2026 Аренда Спецтехники. Все права защищены.</p>
+    </footer>
+
+    <script src="main.js" defer></script>
+    
+</body>
+</html>
