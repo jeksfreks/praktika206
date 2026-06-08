@@ -13,3 +13,8 @@ catalogList.addEventListener('click', (e) => {
         modal.showModal();
     }
 });
+closeModalBtn.addEventListener('click', () => {
+    modal.close();
+});
+
+renderCatalog();
