@@ -92,3 +92,13 @@ body {
     margin: 40px auto;
     padding: 0 24px;
 }
+.hero {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(9, 13, 22, 0.7) 100%), 
+                url('hero-bg.jpg') no-repeat center center / cover;
+    padding: 55px 40px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 40px;
+    border: 1px solid var(--border-glow);
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
