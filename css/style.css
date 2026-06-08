@@ -102,3 +102,23 @@ body {
     position: relative;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
+.hero__title {
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+    background: linear-gradient(120deg, #ffffff 40%, #94a3b8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero__subtitle {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1rem;
+    background: var(--accent-glow);
+    padding: 6px 14px;
+    border-radius: 30px;
+    display: inline-block;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
