@@ -69,3 +69,26 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.header__nav {
+    display: flex;
+    gap: 28px;
+}
+
+.header__nav-item {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.header__nav-item:hover {
+    color: #ffffff;
+}
+
+
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
