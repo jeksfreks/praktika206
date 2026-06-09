@@ -176,3 +176,26 @@ body {
     font-family: inherit;
     transition: var(--transition);
 }
+.filter__select:focus, 
+.filter__input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+
+.catalog-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-glow);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
