@@ -135,3 +135,31 @@ body {
     letter-spacing: -0.5px;
     margin-bottom: 8px;
 }
+.filter {
+    background: var(--panel-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 24px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-glow);
+}
+
+.filter__title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.filter__group {
+    margin-bottom: 18px;
+}
+
+.filter__label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
