@@ -163,3 +163,16 @@ body {
     letter-spacing: 0.5px;
     margin-bottom: 8px;
 }
+.filter__select, 
+.filter__input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    color: #ffffff;
+    background: rgba(9, 13, 22, 0.6);
+    outline: none;
+    font-family: inherit;
+    transition: var(--transition);
+}
