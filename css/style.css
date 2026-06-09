@@ -122,3 +122,16 @@ body {
     display: inline-block;
     border: 1px solid rgba(56, 189, 248, 0.2);
 }
+.catalog {
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    gap: 32px;
+}
+
+.catalog__title {
+    grid-column: 1 / -1;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
