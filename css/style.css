@@ -211,3 +211,20 @@ body {
     object-fit: cover;
     transition: var(--transition);
 }
+.catalog-card:hover .catalog-card__image {
+    transform: scale(1.02);
+}
+
+.catalog-card__body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.catalog-card__title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
