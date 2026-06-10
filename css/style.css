@@ -276,3 +276,16 @@ dialog.modal {
     max-width: 420px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
 }
+dialog.modal[open] {
+    display: flex !important;
+    flex-direction: column;
+}
+
+dialog.modal::backdrop {
+    background: rgba(5, 8, 15, 0.8);
+}
+
+.modal__wrapper {
+    position: relative;
+    padding: 36px;
+}
